@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:key="notification_settings"
+        android:title="@string/notification_settings"
+        app:fragment="com.tushar.examschedular.fragments.NotificationSettingsFragment" />
+
+
+    <ListPreference
+        android:defaultValue="switch"
+        android:entries="@array/theme_array"
+        android:entryValues="@array/theme_array_values"
+        android:icon="@drawable/ic_palette_black_24dp"
+        android:key="theme"
+        android:title="@string/choose_theme_setting" />
+
+    <EditTextPreference
+        android:icon="@drawable/ic_open_in_browser_white_24dp"
+        android:key="schoolwebsite"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/change_school_website_setting_summary"
+        android:title="@string/change_school_website_setting" />
+
+
+    <Preference
+        android:key="cyanea"
+        android:title="Theming"
+        app:isPreferenceVisible="false" />
+</PreferenceScreen>
